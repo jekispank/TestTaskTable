@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">TestTaskTable</string>
+    <string name="participant_one">Участник 1</string>
+    <string name="participant_two">Участник 2</string>
+    <string name="participant_three">Участник 3</string>
+    <string name="participant_four">Участник 4</string>
+    <string name="participant_five">Участник 5</string>
+    <string name="participant_six">Участник 6</string>
+    <string name="participant_seven">Участник 7</string>
+    <string name="place">Место</string>
+    <string name="sum_of_point">Сумма очков</string>
+    <string name="x_hint">X</string>
+
+</resources>

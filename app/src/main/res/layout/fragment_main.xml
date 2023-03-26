@@ -1,0 +1,1262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6DDDE1EB"
+    tools:context=".MainFragment">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:fontFamily="@font/montserrat"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    style="@style/CommonStyle"
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    style="@style/CommonStyle"
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:background="@drawable/background_filled_green"
+                    android:gravity="center_horizontal"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="0dp"
+                    android:text="1" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    style="@style/CommonStyle"
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:background="@drawable/background_filled_green"
+                    android:gravity="center_horizontal"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="0dp"
+                    android:text="2" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    style="@style/CommonStyle"
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:background="@drawable/background_filled_green"
+                    android:gravity="center_horizontal"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="0dp"
+                    android:text="3" />
+
+                <TextView
+                    android:id="@+id/textView14"
+                    style="@style/CommonStyle"
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:background="@drawable/background_filled_green"
+                    android:gravity="center_horizontal"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="0dp"
+                    android:text="4" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    style="@style/CommonStyle"
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:background="@drawable/background_filled_green"
+                    android:gravity="center_horizontal"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="0dp"
+                    android:text="5" />
+
+                <TextView
+                    android:id="@+id/textView16"
+                    style="@style/CommonStyle"
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:background="@drawable/background_filled_green"
+                    android:gravity="center_horizontal"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="0dp"
+                    android:text="6" />
+
+                <TextView
+                    android:id="@+id/textView17"
+                    style="@style/CommonStyle"
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:background="@drawable/background_filled_green"
+                    android:gravity="center_horizontal"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="0dp"
+                    android:text="7" />
+
+                <TextView
+                    android:id="@+id/textView18"
+                    style="@style/CommonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:background="@drawable/background_outlined"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:text="@string/sum_of_point" />
+
+                <TextView
+                    android:id="@+id/textView19"
+                    style="@style/CommonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="5dp"
+                    android:background="@drawable/background_outlined"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:text="@string/place" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/tv_participant_1"
+                    style="@style/CommonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:fontFamily="@font/montserrat"
+                    android:paddingStart="2dp"
+                    android:paddingEnd="2dp"
+                    android:text="@string/participant_one"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView40"
+                    style="@style/CommonStyle"
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:background="@drawable/background_filled_green"
+                    android:gravity="center_horizontal"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:text="1" />
+
+                <TextView
+                    android:id="@+id/textView41"
+                    style="@style/CommonStyle"
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:background="@drawable/background_filled"
+                    android:gravity="center_horizontal"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="0dp" />
+
+                <EditText
+                    android:id="@+id/part_one_point_two"
+                    style="@style/CommonStyle"
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:background="@drawable/background_outlined"
+                    android:gravity="center_horizontal"
+                    android:hint="@string/x_hint"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="0dp" />
+
+                <EditText
+                    android:id="@+id/part_one_point_three"
+                    style="@style/CommonStyle"
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:background="@drawable/background_outlined"
+                    android:gravity="center_horizontal"
+                    android:hint="@string/x_hint"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="0dp" />
+
+                <EditText
+                    android:id="@+id/part_one_point_four"
+                    style="@style/CommonStyle"
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:background="@drawable/background_outlined"
+                    android:gravity="center_horizontal"
+                    android:hint="@string/x_hint"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="0dp" />
+
+                <EditText
+                    android:id="@+id/part_one_point_five"
+                    style="@style/CommonStyle"
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:background="@drawable/background_outlined"
+                    android:gravity="center_horizontal"
+                    android:hint="@string/x_hint"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="0dp" />
+
+                <EditText
+                    android:id="@+id/part_one_point_six"
+                    style="@style/CommonStyle"
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:background="@drawable/background_outlined"
+                    android:gravity="center_horizontal"
+                    android:hint="@string/x_hint"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="0dp" />
+
+                <EditText
+                    android:id="@+id/part_one_point_seven"
+                    style="@style/CommonStyle"
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:background="@drawable/background_outlined"
+                    android:gravity="center_horizontal"
+                    android:hint="@string/x_hint"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="0dp" />
+
+                <TextView
+                    android:id="@+id/part_one_sum"
+                    style="@style/CommonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:background="@drawable/background_outlined"
+                    android:gravity="center"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+                <TextView
+                    android:id="@+id/part_one_place"
+                    style="@style/CommonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:background="@drawable/background_outlined"
+                    android:gravity="center"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/tv_participant_2"
+                    style="@style/CommonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:fontFamily="@font/montserrat"
+                    android:paddingStart="2dp"
+                    android:paddingEnd="2dp"
+                    android:text="@string/participant_two"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView50"
+                    style="@style/CommonStyle"
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:background="@drawable/background_filled_green"
+                    android:gravity="center_horizontal"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:text="2" />
+
+                <EditText
+                    android:id="@+id/part_two_point_one"
+                    style="@style/CommonStyle"
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:background="@drawable/background_outlined"
+                    android:gravity="center_horizontal"
+                    android:hint="@string/x_hint"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="0dp" />
+
+                <TextView
+                    android:id="@+id/textView52"
+                    style="@style/CommonStyle"
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/background_filled"
+                    android:gravity="center_horizontal"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="0dp" />
+
+                <EditText
+                    android:id="@+id/part_two_point_three"
+                    style="@style/CommonStyle"
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:background="@drawable/background_outlined"
+                    android:gravity="center_horizontal"
+                    android:hint="@string/x_hint"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="0dp" />
+
+                <EditText
+                    android:id="@+id/part_two_point_four"
+                    style="@style/CommonStyle"
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:background="@drawable/background_outlined"
+                    android:gravity="center_horizontal"
+                    android:hint="@string/x_hint"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="0dp" />
+
+                <EditText
+                    android:id="@+id/part_two_point_five"
+                    style="@style/CommonStyle"
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:background="@drawable/background_outlined"
+                    android:gravity="center_horizontal"
+                    android:hint="@string/x_hint"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="0dp" />
+
+                <EditText
+                    android:id="@+id/part_two_point_six"
+                    style="@style/CommonStyle"
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:background="@drawable/background_outlined"
+                    android:gravity="center_horizontal"
+                    android:hint="@string/x_hint"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="0dp" />
+
+                <EditText
+                    android:id="@+id/part_two_point_seven"
+                    style="@style/CommonStyle"
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:background="@drawable/background_outlined"
+                    android:gravity="center_horizontal"
+                    android:hint="@string/x_hint"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="0dp" />
+
+                <TextView
+                    android:id="@+id/part_two_sum"
+                    style="@style/CommonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:background="@drawable/background_outlined"
+                    android:gravity="center"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+                <TextView
+                    android:id="@+id/part_two_place"
+                    style="@style/CommonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:background="@drawable/background_outlined"
+                    android:gravity="center"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/tv_participant_3"
+                    style="@style/CommonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:fontFamily="@font/montserrat"
+                    android:paddingStart="2dp"
+                    android:paddingEnd="2dp"
+                    android:text="@string/participant_three"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView60"
+                    style="@style/CommonStyle"
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:background="@drawable/background_filled_green"
+                    android:gravity="center_horizontal"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:text="3" />
+
+                <EditText
+                    android:id="@+id/part_three_point_one"
+                    style="@style/CommonStyle"
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:background="@drawable/background_outlined"
+                    android:gravity="center_horizontal"
+                    android:hint="@string/x_hint"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="0dp" />
+
+                <EditText
+                    android:id="@+id/part_three_point_two"
+                    style="@style/CommonStyle"
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:background="@drawable/background_outlined"
+                    android:gravity="center_horizontal"
+                    android:hint="@string/x_hint"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="0dp" />
+
+                <TextView
+                    android:id="@+id/textView63"
+                    style="@style/CommonStyle"
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:background="@drawable/background_filled"
+                    android:gravity="center_horizontal"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="0dp" />
+
+                <EditText
+                    android:id="@+id/part_three_point_four"
+                    style="@style/CommonStyle"
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:background="@drawable/background_outlined"
+                    android:gravity="center_horizontal"
+                    android:hint="@string/x_hint"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="0dp" />
+
+                <EditText
+                    android:id="@+id/part_three_point_five"
+                    style="@style/CommonStyle"
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:background="@drawable/background_outlined"
+                    android:gravity="center_horizontal"
+                    android:hint="@string/x_hint"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="0dp" />
+
+                <EditText
+                    android:id="@+id/part_three_point_six"
+                    style="@style/CommonStyle"
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:background="@drawable/background_outlined"
+                    android:gravity="center_horizontal"
+                    android:hint="@string/x_hint"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="0dp" />
+
+                <EditText
+                    android:id="@+id/part_three_point_seven"
+                    style="@style/CommonStyle"
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:background="@drawable/background_outlined"
+                    android:gravity="center_horizontal"
+                    android:hint="@string/x_hint"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="0dp" />
+
+                <TextView
+                    android:id="@+id/part_three_sum"
+                    style="@style/CommonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:background="@drawable/background_outlined"
+                    android:gravity="center"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+                <TextView
+                    android:id="@+id/part_three_place"
+                    style="@style/CommonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:background="@drawable/background_outlined"
+                    android:gravity="center"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/tv_participant_4"
+                    style="@style/CommonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:fontFamily="@font/montserrat"
+                    android:paddingStart="2dp"
+                    android:paddingEnd="2dp"
+                    android:text="@string/participant_four"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView70"
+                    style="@style/CommonStyle"
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:background="@drawable/background_filled_green"
+                    android:gravity="center_horizontal"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:text="4" />
+
+                <EditText
+                    android:id="@+id/part_four_point_one"
+                    style="@style/CommonStyle"
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:background="@drawable/background_outlined"
+                    android:gravity="center_horizontal"
+                    android:hint="@string/x_hint"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="0dp" />
+
+                <EditText
+                    android:id="@+id/part_four_point_two"
+                    style="@style/CommonStyle"
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:background="@drawable/background_outlined"
+                    android:gravity="center_horizontal"
+                    android:hint="@string/x_hint"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="0dp" />
+
+                <EditText
+                    android:id="@+id/part_four_point_three"
+                    style="@style/CommonStyle"
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:background="@drawable/background_outlined"
+                    android:gravity="center_horizontal"
+                    android:hint="@string/x_hint"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="0dp" />
+
+                <TextView
+                    android:id="@+id/textView74"
+                    style="@style/CommonStyle"
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:background="@drawable/background_filled"
+                    android:gravity="center_horizontal"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="0dp" />
+
+                <EditText
+                    android:id="@+id/part_four_point_five"
+                    style="@style/CommonStyle"
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:background="@drawable/background_outlined"
+                    android:gravity="center_horizontal"
+                    android:hint="@string/x_hint"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="0dp" />
+
+                <EditText
+                    android:id="@+id/part_four_point_six"
+                    style="@style/CommonStyle"
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:background="@drawable/background_outlined"
+                    android:gravity="center_horizontal"
+                    android:hint="@string/x_hint"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="0dp" />
+
+                <EditText
+                    android:id="@+id/part_four_point_seven"
+                    style="@style/CommonStyle"
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:background="@drawable/background_outlined"
+                    android:gravity="center_horizontal"
+                    android:hint="@string/x_hint"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="0dp" />
+
+                <TextView
+                    android:id="@+id/part_four_sum"
+                    style="@style/CommonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:background="@drawable/background_outlined"
+                    android:gravity="center"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+                <TextView
+                    android:id="@+id/part_four_place"
+                    style="@style/CommonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:background="@drawable/background_outlined"
+                    android:gravity="center"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/tv_participant_5"
+                    style="@style/CommonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:fontFamily="@font/montserrat"
+                    android:text="@string/participant_five"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView80"
+                    style="@style/CommonStyle"
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:background="@drawable/background_filled_green"
+                    android:gravity="center_horizontal"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:text="5" />
+
+                <EditText
+                    android:id="@+id/part_five_point_one"
+                    style="@style/CommonStyle"
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:background="@drawable/background_outlined"
+                    android:gravity="center_horizontal"
+                    android:hint="@string/x_hint"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="0dp" />
+
+                <EditText
+                    android:id="@+id/part_five_point_two"
+                    style="@style/CommonStyle"
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:background="@drawable/background_outlined"
+                    android:gravity="center_horizontal"
+                    android:hint="@string/x_hint"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="0dp" />
+
+                <EditText
+                    android:id="@+id/part_five_point_three"
+                    style="@style/CommonStyle"
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:background="@drawable/background_outlined"
+                    android:gravity="center_horizontal"
+                    android:hint="@string/x_hint"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="0dp" />
+
+                <EditText
+                    android:id="@+id/part_five_point_four"
+                    style="@style/CommonStyle"
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:background="@drawable/background_outlined"
+                    android:gravity="center_horizontal"
+                    android:hint="@string/x_hint"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="0dp" />
+
+                <TextView
+                    android:id="@+id/textView85"
+                    style="@style/CommonStyle"
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:background="@drawable/background_filled"
+                    android:gravity="center_horizontal"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="0dp" />
+
+                <EditText
+                    android:id="@+id/part_five_point_six"
+                    style="@style/CommonStyle"
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:background="@drawable/background_outlined"
+                    android:gravity="center_horizontal"
+                    android:hint="@string/x_hint"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="0dp" />
+
+                <EditText
+                    android:id="@+id/part_five_point_seven"
+                    style="@style/CommonStyle"
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:background="@drawable/background_outlined"
+                    android:gravity="center_horizontal"
+                    android:hint="@string/x_hint"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="0dp" />
+
+                <TextView
+                    android:id="@+id/part_five_sum"
+                    style="@style/CommonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:background="@drawable/background_outlined"
+                    android:gravity="center"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+                <TextView
+                    android:id="@+id/part_five_place"
+                    style="@style/CommonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:background="@drawable/background_outlined"
+                    android:gravity="center"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/tv_participant_6"
+                    style="@style/CommonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:fontFamily="@font/montserrat"
+                    android:paddingStart="2dp"
+                    android:paddingEnd="2dp"
+                    android:text="@string/participant_six"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView90"
+                    style="@style/CommonStyle"
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:background="@drawable/background_filled_green"
+                    android:gravity="center_horizontal"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:text="6" />
+
+                <EditText
+                    android:id="@+id/part_six_point_one"
+                    style="@style/CommonStyle"
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:background="@drawable/background_outlined"
+                    android:gravity="center_horizontal"
+                    android:hint="@string/x_hint"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="0dp" />
+
+                <EditText
+                    android:id="@+id/part_six_point_two"
+                    style="@style/CommonStyle"
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/background_outlined"
+                    android:gravity="center_horizontal"
+                    android:hint="@string/x_hint"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="0dp" />
+
+                <EditText
+                    android:id="@+id/part_six_point_three"
+                    style="@style/CommonStyle"
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:background="@drawable/background_outlined"
+                    android:gravity="center_horizontal"
+                    android:hint="@string/x_hint"
+                    android:inputType="number"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="0dp" />
+
+                <EditText
+                    android:id="@+id/part_six_point_four"
+                    style="@style/CommonStyle"
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:background="@drawable/background_outlined"
+                    android:gravity="center_horizontal"
+                    android:hint="@string/x_hint"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="0dp" />
+
+                <EditText
+                    android:id="@+id/part_six_point_five"
+                    style="@style/CommonStyle"
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:background="@drawable/background_outlined"
+                    android:gravity="center_horizontal"
+                    android:hint="@string/x_hint"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="0dp" />
+
+                <TextView
+                    android:id="@+id/textView96"
+                    style="@style/CommonStyle"
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:background="@drawable/background_filled"
+                    android:gravity="center_horizontal"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="0dp" />
+
+                <EditText
+                    android:id="@+id/part_six_point_seven"
+                    style="@style/CommonStyle"
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:background="@drawable/background_outlined"
+                    android:gravity="center_horizontal"
+                    android:hint="@string/x_hint"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="0dp" />
+
+                <TextView
+                    android:id="@+id/part_six_sum"
+                    style="@style/CommonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:background="@drawable/background_outlined"
+                    android:gravity="center"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+                <TextView
+                    android:id="@+id/part_six_place"
+                    style="@style/CommonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:background="@drawable/background_outlined"
+                    android:gravity="center"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/tv_participant_7"
+                    style="@style/CommonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:paddingStart="2dp"
+                    android:paddingEnd="2dp"
+                    android:text="@string/participant_seven"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView100"
+                    style="@style/CommonStyle"
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:background="@drawable/background_filled_green"
+                    android:gravity="center_horizontal"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:text="7" />
+
+                <EditText
+                    android:id="@+id/part_seven_point_one"
+                    style="@style/CommonStyle"
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:background="@drawable/background_outlined"
+                    android:gravity="center_horizontal"
+                    android:hint="X"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="0dp" />
+
+                <EditText
+                    android:id="@+id/part_seven_point_two"
+                    style="@style/CommonStyle"
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:background="@drawable/background_outlined"
+                    android:gravity="center_horizontal"
+                    android:hint="X"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="0dp" />
+
+                <EditText
+                    android:id="@+id/part_seven_point_three"
+                    style="@style/CommonStyle"
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:background="@drawable/background_outlined"
+                    android:gravity="center_horizontal"
+                    android:hint="X"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="0dp" />
+
+                <EditText
+                    android:id="@+id/part_seven_point_four"
+                    style="@style/CommonStyle"
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:background="@drawable/background_outlined"
+                    android:gravity="center_horizontal"
+                    android:hint="@string/x_hint"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="0dp" />
+
+                <EditText
+                    android:id="@+id/part_seven_point_five"
+                    style="@style/CommonStyle"
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:background="@drawable/background_outlined"
+                    android:gravity="center_horizontal"
+                    android:hint="@string/x_hint"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="0dp" />
+
+                <EditText
+                    android:id="@+id/part_seven_point_seven"
+                    style="@style/CommonStyle"
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:background="@drawable/background_outlined"
+                    android:gravity="center_horizontal"
+                    android:hint="@string/x_hint"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="0dp" />
+
+                <TextView
+                    android:id="@+id/textView107"
+                    style="@style/CommonStyle"
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:background="@drawable/background_filled"
+                    android:gravity="center_horizontal"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="0dp" />
+
+                <TextView
+                    android:id="@+id/part_seven_sum"
+                    style="@style/CommonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:background="@drawable/background_outlined"
+                    android:gravity="center"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+                <TextView
+                    android:id="@+id/part_seven_place"
+                    style="@style/CommonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:background="@drawable/background_outlined"
+                    android:gravity="center"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp" />
+
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
