@@ -46,19 +46,52 @@ class MainViewModel(private val point: Int, private val index: Int) : ViewModel(
 
     fun distributeFinalPlaces() {
         val arrayOfPoints: List<Int?>? = _sum.value
-        val sortedArray = arrayOfPoints?.filterNotNull()?.sortedDescending()
-        var arrayOfFinalPlaces = List<Int?>(7){ null }
-        val arrayToLiveData = arrayOfFinalPlaces.toTypedArray()
-        arrayOfPoints?.forEach {
-            val index = arrayOfPoints.indexOf(it)
-            val value  = sortedArray?.indexOf(it)?.plus(1)
-            val previousValue  = sortedArray?.indexOf(it)
-            arrayToLiveData[index] = value
-            Log.d("ViewModel", "Index is $index, value is $value")
-            _finalPlaces.value = arrayToLiveData.toList()
+        Log.d("ViewModel", "34 New list is $arrayOfPoints")
+        val newArrayOfPoints = MutableList<Int>(7) {0}
+        var index = 0
+        if (arrayOfPoints != null) {
+            for (i in arrayOfPoints) {
+                if (i != null) {
+                    newArrayOfPoints[index] = i
+                }
+                index++
+            }
         }
-        Log.d("ViewModel", "23 list is $arrayToLiveData")
-    }
+        Log.d("ViewModel", "33 New list is $newArrayOfPoints")
+
+
+            val indexedPoints = newArrayOfPoints.mapIndexed { index, value -> Pair(index, value) }
+            val sortedPoints =
+                indexedPoints.sortedWith(compareByDescending<Pair<Int, Int>> { it.second }.thenBy { it.first })
+
+            val places = MutableList(newArrayOfPoints.size) { 0 }
+            var place = 1
+
+            for (i in sortedPoints.indices) {
+                val index = sortedPoints[i].first
+                if (i > 0 && sortedPoints[i].second != sortedPoints[i - 1].second) {
+                    place++
+                }
+                places[index] = place
+            }
+        _finalPlaces.value = places.toList()
+
+        }
+
+
+//        val sortedArray = arrayOfPoints?.filterNotNull()?.sortedDescending()
+//        var arrayOfFinalPlaces = List<Int?>(7){ null }
+//        val arrayToLiveData = arrayOfFinalPlaces.toTypedArray()
+//        arrayOfPoints?.forEach {
+//            val index = arrayOfPoints.indexOf(it)
+//            val value  = sortedArray?.indexOf(it)?.plus(1)
+//            val previousValue  = sortedArray?.indexOf(it)
+//            arrayToLiveData[index] = value
+//            Log.d("ViewModel", "Index is $index, value is $value")
+//            _finalPlaces.value = arrayToLiveData.toList()
+//        }
+//        Log.d("ViewModel", "23 list is $arrayToLiveData")
+//    }
 }
 
 class MainViewModelFactory(private val point: Int, private val index: Int) :
@@ -71,6 +104,7 @@ class MainViewModelFactory(private val point: Int, private val index: Int) :
         throw IllegalArgumentException("Unknown ViewModelClass")
     }
 }
+
     
 
 
