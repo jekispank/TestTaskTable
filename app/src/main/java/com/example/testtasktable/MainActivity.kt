@@ -1,7 +1,7 @@
 package com.example.testtasktable
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import com.example.testtasktable.databinding.ActivityMainBinding

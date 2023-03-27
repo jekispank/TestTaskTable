@@ -1,7 +1,6 @@
 package com.example.testtasktable
 
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -16,11 +15,9 @@ class MainFragment : Fragment() {
     private lateinit var binding: FragmentMainBinding
     private lateinit var row: Row
     private lateinit var place: Place
-    private var point = 0
-    private var index = 0
 
     private val viewModelFactory: MainViewModelFactory by lazy {
-        MainViewModelFactory(point, index)
+        MainViewModelFactory()
     }
     private val viewModel by lazy {
         ViewModelProvider(this, viewModelFactory)[MainViewModel::class.java]
@@ -29,21 +26,19 @@ class MainFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding = FragmentMainBinding.inflate(inflater, container, false)
         return binding.root
     }
 
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
 
         val arrayList = initializeListOfParticipants()
         for (array in arrayList) {
             for (item in array) {
                 setOnAction(item, array, arrayList)
-                Log.d("MainFragment", "ARRAYLIST is $arrayList.")
             }
-
         }
     }
 
@@ -71,12 +66,11 @@ class MainFragment : Fragment() {
                 } else {
                     addValueSetSum(textView, element, arrayOfElements, arrayListOfParticipants)
                     textView.setBackgroundResource(R.drawable.background_outlined)
-                    viewModel.sum.observe(viewLifecycleOwner, Observer {
-                        Log.d("MainFragment", "2 List of sum from LiveData is $it")
+                    viewModel.sum.observe(viewLifecycleOwner) {
                         arrayOfElements[6].text =
                             it[arrayListOfParticipants.indexOf(arrayOfElements)]?.toString()
                         if (!it.contains(null)) setFinalPlaces()
-                    })
+                    }
 
                 }
                 false
@@ -102,7 +96,7 @@ class MainFragment : Fragment() {
     }
 
     /* Add entered value to List for setting to UI and update sum */
-    fun addValueSetSum(
+    private fun addValueSetSum(
         textView: TextView,
         item: TextView,
         array: Array<TextView>,
@@ -122,16 +116,12 @@ class MainFragment : Fragment() {
         place = Place()
         val listOfCells = place.getListOfPlaces(binding)
         viewModel.distributeFinalPlaces()
-        viewModel.finalPlaces.observe(viewLifecycleOwner, Observer { list ->
-            Log.d("MainFragment", "List of places is $list")
-
+        viewModel.finalPlaces.observe(viewLifecycleOwner) { list ->
             listOfCells.forEach {
                 val index = listOfCells.indexOf(it)
                 val value = list[index]
-
                 it.text = value.toString()
-
             }
-        })
+        }
     }
 }

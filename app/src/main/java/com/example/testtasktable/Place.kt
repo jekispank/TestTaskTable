@@ -1,6 +1,5 @@
 package com.example.testtasktable
 
-import android.widget.TextView
 import com.example.testtasktable.databinding.FragmentMainBinding
 
 class Place {
